@@ -40,7 +40,39 @@ footer ul li {
     list-style-type: none;
     padding-right:20px;
 }
+.flex-container {
+    display: flex;
+    width:30%;
+    margin: 1px;
+    padding-left: 10px; 
+}
+.gridcontainer {
+    display: grid;
+    grid-template-areas:
+    'myarea1'
+    'myarea2'
+    'myarea3';
+    grid-template-rows:150px 150px 150px;
+    grid-template-columns: auto;
+    column-gap: 50px;
+    row-gap: 50px; 
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+.myarea1 {
+    grid-area: myarea1;
+}
+.myarea2 {
+    grid-area: myarea2;
+}
+.myarea3 {
+    grid-area: myarea3;
+}
+
 footer {
     background: rgba(42, 249, 177, 0.05);
     border: 2px solid #F22283;
+}
+@media only screen and (max-width: 600px){
+    
 }
